@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hala Adel | Career Branding Strategist</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#0c0c0c;
+color:#f5f5f5;
+overflow-x:hidden;
+}
+
+h1,h2{
+font-family:'Playfair Display',serif;
+}
+
+section{
+padding:100px 10%;
+opacity:0;
+transform:translateY(40px);
+transition:1s ease;
+}
+
+section.active{
+opacity:1;
+transform:translateY(0);
+}
+
+.hero{
+text-align:center;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:radial-gradient(circle at top,#1a1a1a,#0c0c0c);
+}
+
+.hero h1{
+font-size:52px;
+margin:0;
+color:#c6a85a;
+}
+
+.hero p{
+font-size:20px;
+color:#ccc;
+margin-top:15px;
+}
+
+.btn{
+margin-top:30px;
+padding:12px 30px;
+background:#c6a85a;
+color:#0c0c0c;
+text-decoration:none;
+border-radius:30px;
+font-weight:600;
+transition:0.4s;
+}
+
+.btn:hover{
+background:#f0d98a;
+box-shadow:0 0 25px #c6a85a;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#141414;
+padding:30px;
+border-radius:15px;
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px rgba(198,168,90,0.6);
+}
+
+footer{
+text-align:center;
+padding:40px;
+background:#111;
+color:#888;
+}
+a{color:#c6a85a;}
+</style>
+</head>
+
+<body>
+
+<section class="hero active">
+<h1>Hala Adel Shaker</h1>
+<p>Career Branding & ATS Optimization Specialist</p>
+<p>I don’t just write CVs. I engineer professional positioning.</p>
+<a href="#services" class="btn">Work With Me</a>
+</section>
+
+<section id="about">
+<h2>About Me</h2>
+<p>5 years of experience in ATS-optimized CV writing, LinkedIn positioning, and AI-powered career branding. Founder of CV EXCELLENCE, helping professionals elevate their market presence with strategic precision.</p>
+</section>
+
+<section id="services">
+<h2>Premium Services</h2>
+<div class="services">
+<div class="card">
+<h3>ATS CV Optimization</h3>
+<p>Keyword-engineered resumes structured for modern hiring systems.</p>
+</div>
+<div class="card">
+<h3>LinkedIn Positioning</h3>
+<p>Profile optimization aligned with recruiter search algorithms.</p>
+</div>
+<div class="card">
+<h3>Professional Portfolio</h3>
+<p>Strategic presentation of expertise with premium design structure.</p>
+</div>
+<div class="card">
+<h3>Company Profile</h3>
+<p>Structured corporate identity documents with persuasive positioning.</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Let’s Elevate Your Professional Presence</h2>
+<a href="https://wa.me/201211867359" class="btn">Contact Me</a>
+</section>
+
+<footer>
+© 2026 Hala Adel | CV EXCELLENCE
+</footer>
+
+<script>
+const sections = document.querySelectorAll("section");
+window.addEventListener("scroll",()=>{
+sections.forEach(sec=>{
+const top = window.scrollY;
+const offset = sec.offsetTop - 400;
+if(top > offset){
+sec.classList.add("active");
+}
+});
+});
+</script>
+
+</body>
+</html>
